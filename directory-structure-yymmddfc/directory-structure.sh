@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# this is a programming logic test I took for an SRE opportunity
-# the test description is available in README file
-
 # full path to directory that contains the files to be processed
 directoryName="${1}"
 
