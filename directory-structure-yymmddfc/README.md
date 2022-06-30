@@ -11,6 +11,7 @@ The file naming convention is: AAxyz.ddmmyyFSRV.Z01, where:
 
 Sample file names in the directory:
 FS123.010218FSRV.Z01
+
 FS123.010318FSRV.Z01
 FS123.010418FSRV.Z01
 FS456.010218FSRV.Z01
