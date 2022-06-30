@@ -17,7 +17,7 @@ fileCount=0
 while IFS= read -r line
 do
 	#echo "Debug $line"
-    #echo "$line"
+    	#echo "$line"
 	baseFilename=$(basename "${line}")
     
 	fileYear=$(echo "${baseFilename}" | awk -F  "." '/1/ {print substr($2,5,2)}')
@@ -28,11 +28,11 @@ do
 	newDir=${fileYear}/${fileMonth}/${fileDay}/${fileCode}
 
 	mkdir -v -p "${directoryName}/${newDir}"
-    #Debug behavior
-    cp "${line}" "${directoryName}/${newDir}/" 
-    # Production behavior
-    #mv "${line}" "${directoryName}/${newDir}/"
-    ((fileCount+=1))
+    	#Debug behavior
+    	cp "${line}" "${directoryName}/${newDir}/" 
+    	# Production behavior
+    	#mv "${line}" "${directoryName}/${newDir}/"
+    	((fileCount+=1))
 done < "fileNames.txt"
 
 echo "==== Total Files Moved ${fileCount} ===="
